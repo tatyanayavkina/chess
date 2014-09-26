@@ -1,0 +1,181 @@
+body{
+   background-image: linear-gradient(to bottom, #d7d7d7 0%, #eeeeee 116px) !important;
+}
+.ul-wrapper{
+    float: right;
+    padding-right: 20px;
+}
+ul.nav{
+    width: 230px;
+    margin: 0 auto;
+}
+
+ul.nav li:hover{
+    background: #E4E4E4;
+}
+
+#main{
+    display: table;
+    margin: 60px auto;
+    width: 100%;
+}
+
+#board-wrapper{
+    display: table-cell;
+    width: 70%;
+}
+
+#board{
+    width: 600px;
+    margin: 0 auto;
+}
+
+#game-info-wrapper{
+    display: table-cell;
+    vertical-align: top;
+ }
+#game-info{
+
+    border: 1px solid  #ccc;
+    width: 200px;
+    padding: 10px;
+}
+#game-inner{
+    display: table;
+    width: 100%;
+    height: 150px;
+}
+
+#step-img{
+    display: table-cell;
+    vertical-align: middle;
+}
+#img-wrapper{
+    height: 60px;
+    width: 60px;
+}
+
+#step-info{
+    display: table-cell;
+    vertical-align: middle;
+    color: #848484;
+    font-size: 18px;
+    padding-left: 20px;
+}
+.white{
+    background: url('img/w_king.svg') center no-repeat;
+}
+.black{
+    background: url('img/b_king.svg') center no-repeat;
+}
+
+.col{
+    display: inline-block;
+}
+
+.cell-wrapper {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+}
+
+.cell-wrapper.white-cell {
+    background-color: #F0D9B5;
+}
+
+.cell-wrapper.black-cell {
+    background: #B58863;
+}
+.cell-wrapper.red{
+    background: rgba(216,85,0,0.9);
+}
+.cell-wrapper.move{
+    box-shadow: inset 0 0 10px 2px rgba(216,85,0,0.9);
+}
+.figure {
+    width: 64px;
+    height: 64px;
+}
+
+.note{
+    width: 64px;
+    font-size: 14px;
+    color: #707070;
+}
+.alph{
+    display:inline-block;
+    text-align: center;
+    height: 16px;
+}
+.num{
+    height: 64px;
+}
+.num-inner{
+    vertical-align: middle;
+    float: right;
+    height: 16px;
+}
+/*
+   !--begin figure-styles
+*/
+.white-pawn{
+    background-image: url('img/w_pawn.svg');
+}
+
+.white-knight{
+    background-image: url('img/w_knight.svg');
+}
+
+.white-bishop{
+    background-image: url('img/w_bishop.svg');
+}
+
+.white-rook{
+    background-image: url('img/w_rook.svg');
+}
+
+.white-queen{
+    background-image: url('img/w_queen.svg');
+}
+
+.white-king{
+    background-image: url('img/w_king.svg');
+}
+
+.black-pawn{
+    background-image: url('img/b_pawn.svg')
+}
+
+.black-knight{
+    background-image: url('img/b_knight.svg');
+}
+
+.black-bishop{
+    background-image: url('img/b_bishop.svg');
+}
+
+.black-rook{
+    background-image: url('img/b_rook.svg');
+}
+
+.black-queen{
+    background-image: url('img/b_queen.svg');
+}
+
+.black-king{
+    background-image: url('img/b_king.svg');
+}
+/*
+    !--end  figure-styles
+*/
+#end-game-wrapper{
+    min-width: 600px;
+}
+#end-game{
+    width: 400px;
+    height: 60px;
+    margin: 200px auto;
+    color: #707070;
+    font-size: 40px;
+
+}

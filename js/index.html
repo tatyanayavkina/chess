@@ -1,0 +1,27 @@
+<html ng-app = "staticchess">
+	<head>
+		 
+		 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+		 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js" type="text/javascript"></script>
+		 <script src="script.js" type="text/javascript" ></script>
+		 <script src="app.js" type="text/javascript"></script>
+		 <script src="service.js" type="text/javascript"></script>
+		 <script src="controller.js" type="text/javascript"></script>
+		
+		 <link type="text/css" rel="stylesheet" href="style.css">
+		 <title>chess board</title>
+	 </head>
+	 <body>
+		 <div id = "main" ng-controller = "BoardCtrl">
+			<table>
+				<tr ng-repeat = "row in standing.board">
+					<td ng-repeat = "cell in row" class = "cell-wrapper" ng-class = "standing.getCellClass($parent.$index, $index)">
+						<div class = "figure" ng-class = "standing.getFigureClass($parent.$index, $index)">
+							
+						</div>
+					</td>
+				</tr>
+			</table>
+		 </div>
+	 </body>
+</html>

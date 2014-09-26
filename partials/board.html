@@ -1,0 +1,27 @@
+<div id = "board-wrapper">
+    <div id = "board">
+        <div class = "col">
+            <div class="num note" data-ng-repeat="num in vertical">
+                <div class = num-inner>
+                    {{num}}
+                </div>
+            </div>
+        </div>
+        <chess-board></chess-board>
+    </div>
+</div>
+
+<div id = "game-info-wrapper">
+    <div id = "game-info">
+        <div id = "game-inner">
+            <div id = "step-info">
+                {{standing.info}}
+            </div>
+            <div id = "step-img" >
+                <div id = "img-wrapper" ng-class = "moveColor">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
